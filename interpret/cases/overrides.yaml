@@ -1,0 +1,33 @@
+# Structure-specific fixes, applied by interpret/tools/build_cases_yaml.py (keyed by case_id).
+# ligand_comp: chemical component to use in the crystal structure when it differs from the
+#              Davis-matched comp_id (e.g. covalent adducts deposited under a different ID).
+4G5J_0WM_EGFR:
+  ligand_comp: 0WN   # afatinib bound to Cys797 is deposited as 0WN; the 0WM copies sit outside the ATP pocket
+  main_figure: true
+
+7N9G_1N1_ABL1:
+  main_figure: true
+
+1T46_STI_KIT:
+  main_figure: true
+
+1UWH_BAX_BRAF:
+  main_figure: true
+
+# Additional alternate PDB structures from candidates.csv (e.g. 4XEY used in DMFF-DTA Fig. 3b for ABL1-Dasatinib)
+extra_cases:
+  - case_id: 4XEY_1N1_ABL1
+    dataset: davis
+    tier: core
+    main_figure: true
+    drug_id: "3062316"
+    drug_name: Dasatinib
+    comp_id: 1N1
+    protein_id: Q59FK4
+    protein_gene: ABL1
+    pdb_id: 4XEY
+    resolution: 2.891
+    y: 10.3372
+    protein_chain: A
+    ligand_chain: null
+

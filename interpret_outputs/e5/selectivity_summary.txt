@@ -1,0 +1,42 @@
+=== E5: Per-Drug Cross-Target Selectivity Summary (selective drugs: n_targets>=10, range>=1.5) ===
+dataset  setting  n_selective_drugs  ci_median  ci_mean  spearman_median  spearman_mean  pearson_median  pearson_mean  rmse_median  rmse_mean  mae_median  frac_spearman_gt_0.5  frac_ci_gt_0.7
+  davis        1                 68      0.863    0.871            0.562          0.560           0.827         0.766        0.354      0.361       0.165                 0.618           1.000
+  davis        2                 68      0.714    0.730            0.351          0.350           0.382         0.380        0.575      0.663       0.385                 0.221           0.603
+   kiba        1               1625      0.859    0.836            0.793          0.716           0.831         0.759        0.370      0.419       0.235                 0.841           0.892
+   kiba        2               1625      0.795    0.769            0.667          0.587           0.701         0.629        0.562      0.655       0.404                 0.676           0.729
+
+=== Representative Selectivity Cases (Regime 1: High/Medium/Low & Regime 2: Multi-Target) ===
+                        regime affinity_tier  drug_id drug_name protein_id protein_gene  fold  y_true  y_main  y_phy     H      S  abs_err_main  abs_err_phy
+  Regime1_Selectivity_Gradient          High  3062316 Dasatinib     Q59FK4         ABL1     0  10.337  10.493 10.401 4.961 -5.440         0.156        0.064
+  Regime1_Selectivity_Gradient          High  3062316 Dasatinib     P29322        EPHA8     3   9.620   9.618  9.441 4.040 -5.401         0.002        0.179
+  Regime1_Selectivity_Gradient        Medium  3062316 Dasatinib     Q99759       MAP3K3     0   6.553   6.535  6.522 3.393 -3.129         0.018        0.031
+  Regime1_Selectivity_Gradient        Medium  3062316 Dasatinib     Q8TDR2        STK35     3   6.114   6.059  6.030 2.574 -3.456         0.054        0.084
+  Regime1_Selectivity_Gradient           Low  3062316 Dasatinib     O96013         PAK4     4   5.000   4.999  4.736 2.655 -2.081         0.001        0.264
+  Regime1_Selectivity_Gradient           Low  3062316 Dasatinib     P22694    PKAC-beta     4   5.000   4.999  5.003 2.772 -2.230         0.001        0.003
+Regime2_Consistent_MultiTarget    Consistent  3062316 Dasatinib     P29320        EPHA3     3  10.032   9.712  9.267 4.038 -5.229         0.320        0.765
+Regime2_Consistent_MultiTarget    Consistent  3062316 Dasatinib A0A2K5TT62         ABL2     4   9.770   9.909  9.779 5.126 -4.653         0.139        0.009
+Regime2_Consistent_MultiTarget    Consistent  3062316 Dasatinib     P06239          LCK     1   9.699  10.116 10.392 5.405 -4.987         0.417        0.693
+  Regime1_Selectivity_Gradient          High 10184653  Afatinib     P00533         EGFR     4   9.602   9.156  8.686 4.510 -4.176         0.446        0.916
+  Regime1_Selectivity_Gradient          High 10184653  Afatinib     Q15303        ERBB4     2   8.201   8.021  7.538 4.336 -3.202         0.180        0.663
+  Regime1_Selectivity_Gradient        Medium 10184653  Afatinib     O14976          GAK     1   7.102   7.000  6.552 2.946 -3.607         0.102        0.550
+  Regime1_Selectivity_Gradient        Medium 10184653  Afatinib     P06239          LCK     0   6.244   5.951  5.824 2.929 -2.895         0.293        0.420
+  Regime1_Selectivity_Gradient           Low 10184653  Afatinib     Q9Y5S2        MRCKB     4   5.000   5.000  5.060 2.968 -2.092         0.000        0.060
+  Regime1_Selectivity_Gradient           Low 10184653  Afatinib     Q8NEV4        MYO3A     4   5.000   5.000  4.959 3.181 -1.778         0.000        0.041
+  Regime1_Selectivity_Gradient          High     5291  Imatinib     P10721          KIT     1   7.886   7.903  7.543 3.841 -3.702         0.017        0.343
+  Regime1_Selectivity_Gradient          High     5291  Imatinib     Q16832         DDR2     0   7.824   7.573  7.153 3.488 -3.666         0.250        0.671
+  Regime1_Selectivity_Gradient        Medium     5291  Imatinib     Q05D26          BLK     0   6.284   5.900  5.921 2.971 -2.950         0.384        0.363
+  Regime1_Selectivity_Gradient        Medium     5291  Imatinib     P16234       PDGFRA     4   7.509   7.061  7.056 3.996 -3.060         0.448        0.453
+  Regime1_Selectivity_Gradient           Low     5291  Imatinib     P80192         MLK1     4   5.000   5.000  5.023 2.668 -2.355         0.000        0.023
+  Regime1_Selectivity_Gradient           Low     5291  Imatinib     O00506         YSK1     4   5.000   5.000  4.990 3.016 -1.974         0.000        0.010
+Regime2_Consistent_MultiTarget    Consistent     5291  Imatinib     P07333        CSF1R     2   7.959   7.669  7.360 4.735 -2.625         0.290        0.599
+Regime2_Consistent_MultiTarget    Consistent     5291  Imatinib     P10721          KIT     1   7.886   7.903  7.543 3.841 -3.702         0.017        0.343
+Regime2_Consistent_MultiTarget    Consistent     5291  Imatinib     P09619       PDGFRB     4   7.854   7.505  7.152 4.214 -2.937         0.349        0.702
+  Regime1_Selectivity_Gradient          High   216239 Sorafenib     P36888         FLT3     1   7.886   8.079  7.736 3.722 -4.015         0.193        0.150
+  Regime1_Selectivity_Gradient          High   216239 Sorafenib     P07949          RET     0   7.886   7.332  7.615 3.834 -3.782         0.554        0.271
+  Regime1_Selectivity_Gradient        Medium   216239 Sorafenib     P15056         BRAF     3   6.268   5.298  5.610 2.402 -3.208         0.970        0.658
+  Regime1_Selectivity_Gradient        Medium   216239 Sorafenib     P16234       PDGFRA     2   7.208   7.176  7.101 5.446 -1.655         0.032        0.106
+  Regime1_Selectivity_Gradient           Low   216239 Sorafenib     P08069        IGF1R     4   5.000   5.000  4.850 2.256 -2.594         0.000        0.150
+  Regime1_Selectivity_Gradient           Low   216239 Sorafenib     P36897       TGFBR1     4   5.000   5.000  4.679 2.479 -2.200         0.000        0.321
+Regime2_Consistent_MultiTarget    Consistent   216239 Sorafenib     P07949          RET     0   7.886   7.332  7.615 3.834 -3.782         0.554        0.271
+Regime2_Consistent_MultiTarget    Consistent   216239 Sorafenib     P36888         FLT3     1   7.886   8.079  7.736 3.722 -4.015         0.193        0.150
+Regime2_Consistent_MultiTarget    Consistent   216239 Sorafenib     P10721          KIT     0   7.553   7.795  8.049 3.534 -4.515         0.242        0.496

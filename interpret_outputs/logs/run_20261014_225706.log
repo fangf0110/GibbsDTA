@@ -1,0 +1,81 @@
+root=/root/PhyNet-DTA python=/miniconda3/bin/python steps=unimol,e0,labels,e1,e2,e3,e4,e5
+
+========== [unimol] 2026-10-14 22:57:06 ==========
+[davis] {
+  "offset": 0,
+  "extra_token": "end",
+  "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+  "nearest_centroid_acc": {
+    "offset_0_extra_at_end": 0.9994732683697656,
+    "offset_1_extra_at_start": 0.649723465894127
+  },
+  "n_ligands_checked": 68,
+  "rows_minus_atoms_hist": {
+    "1": 68
+  },
+  "decided": true,
+  "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+}
+[kiba] {
+  "offset": 0,
+  "extra_token": "end",
+  "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+  "nearest_centroid_acc": {
+    "offset_0_extra_at_end": 0.9997892962494732,
+    "offset_1_extra_at_start": 0.6818373367045933
+  },
+  "n_ligands_checked": 300,
+  "rows_minus_atoms_hist": {
+    "1": 300
+  },
+  "decided": true,
+  "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+}
+saved /root/PhyNet-DTA/interpret/outputs/e0/unimol_token_map.json
+[unimol] done in 2s
+
+========== [e0] 2026-10-14 22:57:08 ==========
+E0 re-inference | device=cuda | root=/root/PhyNet-DTA
+[MISSING] davis s1 f0: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_1/train/fold_0/best_model.pth
+[MISSING] davis s1 f1: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_1/train/fold_1/best_model.pth
+[MISSING] davis s1 f2: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_1/train/fold_2/best_model.pth
+[MISSING] davis s1 f3: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_1/train/fold_3/best_model.pth
+[MISSING] davis s1 f4: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_1/train/fold_4/best_model.pth
+[MISSING] davis s2 f0: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_2/train/fold_0/best_model.pth
+[MISSING] davis s2 f1: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_2/train/fold_1/best_model.pth
+[MISSING] davis s2 f2: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_2/train/fold_2/best_model.pth
+[MISSING] davis s2 f3: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_2/train/fold_3/best_model.pth
+[MISSING] davis s2 f4: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_2/train/fold_4/best_model.pth
+[MISSING] davis s3 f0: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_3/train/fold_0/best_model.pth
+[MISSING] davis s3 f1: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_3/train/fold_1/best_model.pth
+[MISSING] davis s3 f2: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_3/train/fold_2/best_model.pth
+[MISSING] davis s3 f3: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_3/train/fold_3/best_model.pth
+[MISSING] davis s3 f4: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_3/train/fold_4/best_model.pth
+[MISSING] davis s4 f0: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_4/train/fold_0/best_model.pth
+[MISSING] davis s4 f1: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_4/train/fold_1/best_model.pth
+[MISSING] davis s4 f2: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_4/train/fold_2/best_model.pth
+[MISSING] davis s4 f3: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_4/train/fold_3/best_model.pth
+[MISSING] davis s4 f4: /root/PhyNet-DTA/results/5fold/result_5fold_davis/setting_4/train/fold_4/best_model.pth
+[MISSING] kiba s1 f0: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_1/train/fold_0/best_model.pth
+[MISSING] kiba s1 f1: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_1/train/fold_1/best_model.pth
+[MISSING] kiba s1 f2: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_1/train/fold_2/best_model.pth
+[MISSING] kiba s1 f3: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_1/train/fold_3/best_model.pth
+[MISSING] kiba s1 f4: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_1/train/fold_4/best_model.pth
+[MISSING] kiba s2 f0: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_2/train/fold_0/best_model.pth
+[MISSING] kiba s2 f1: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_2/train/fold_1/best_model.pth
+[MISSING] kiba s2 f2: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_2/train/fold_2/best_model.pth
+[MISSING] kiba s2 f3: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_2/train/fold_3/best_model.pth
+[MISSING] kiba s2 f4: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_2/train/fold_4/best_model.pth
+[MISSING] kiba s3 f0: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_3/train/fold_0/best_model.pth
+[MISSING] kiba s3 f1: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_3/train/fold_1/best_model.pth
+[MISSING] kiba s3 f2: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_3/train/fold_2/best_model.pth
+[MISSING] kiba s3 f3: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_3/train/fold_3/best_model.pth
+[MISSING] kiba s3 f4: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_3/train/fold_4/best_model.pth
+[MISSING] kiba s4 f0: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_4/train/fold_0/best_model.pth
+[MISSING] kiba s4 f1: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_4/train/fold_1/best_model.pth
+[MISSING] kiba s4 f2: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_4/train/fold_2/best_model.pth
+[MISSING] kiba s4 f3: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_4/train/fold_3/best_model.pth
+[MISSING] kiba s4 f4: /root/PhyNet-DTA/results/5fold/results_5fold_kiba/setting_4/train/fold_4/best_model.pth
+
+RESULT: 40 FAILURE(S): ['davis s1 f0 missing checkpoint', 'davis s1 f1 missing checkpoint', 'davis s1 f2 missing checkpoint', 'davis s1 f3 missing checkpoint', 'davis s1 f4 missing checkpoint', 'davis s2 f0 missing checkpoint', 'davis s2 f1 missing checkpoint', 'davis s2 f2 missing checkpoint', 'davis s2 f3 missing checkpoint', 'davis s2 f4 missing checkpoint', 'davis s3 f0 missing checkpoint', 'davis s3 f1 missing checkpoint', 'davis s3 f2 missing checkpoint', 'davis s3 f3 missing checkpoint', 'davis s3 f4 missing checkpoint', 'davis s4 f0 missing checkpoint', 'davis s4 f1 missing checkpoint', 'davis s4 f2 missing checkpoint', 'davis s4 f3 missing checkpoint', 'davis s4 f4 missing checkpoint', 'kiba s1 f0 missing checkpoint', 'kiba s1 f1 missing checkpoint', 'kiba s1 f2 missing checkpoint', 'kiba s1 f3 missing checkpoint', 'kiba s1 f4 missing checkpoint', 'kiba s2 f0 missing checkpoint', 'kiba s2 f1 missing checkpoint', 'kiba s2 f2 missing checkpoint', 'kiba s2 f3 missing checkpoint', 'kiba s2 f4 missing checkpoint', 'kiba s3 f0 missing checkpoint', 'kiba s3 f1 missing checkpoint', 'kiba s3 f2 missing checkpoint', 'kiba s3 f3 missing checkpoint', 'kiba s3 f4 missing checkpoint', 'kiba s4 f0 missing checkpoint', 'kiba s4 f1 missing checkpoint', 'kiba s4 f2 missing checkpoint', 'kiba s4 f3 missing checkpoint', 'kiba s4 f4 missing checkpoint']
+[e0] FAILED - see /root/PhyNet-DTA/interpret/outputs/logs/run_20261014_225706.log

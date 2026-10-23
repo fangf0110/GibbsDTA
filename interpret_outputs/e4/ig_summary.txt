@@ -1,0 +1,13 @@
+=== IG: binding-site recovery and agreement with maxpool / attention ===
+s1_test  H       n=114 AUROC_site median=0.574 (Wilcoxon>0.5 p=7.22e-11) atom_AUROC median=0.549 | rho(IG,maxpool) res=0.750 top20 overlap=0.300 | completeness |err| median=0.0005
+s1_test  S       n=114 AUROC_site median=0.537 (Wilcoxon>0.5 p=2.44e-07) atom_AUROC median=0.564 | rho(IG,maxpool) res=0.751 top20 overlap=0.300 | completeness |err| median=0.0006
+s1_test  y_main  n=114 AUROC_site median=0.557 (Wilcoxon>0.5 p=4.86e-09) atom_AUROC median=0.572 | rho(IG,maxpool) res=0.752 top20 overlap=0.300 | completeness |err| median=0.0044
+s1_test  y_phy   n=114 AUROC_site median=0.561 (Wilcoxon>0.5 p=2.47e-10) atom_AUROC median=0.562 | rho(IG,maxpool) res=0.752 top20 overlap=0.250 | completeness |err| median=0.0004
+s3_test  H       n=114 AUROC_site median=0.514 (Wilcoxon>0.5 p=6.65e-03) atom_AUROC median=0.509 | rho(IG,maxpool) res=0.752 top20 overlap=0.300 | completeness |err| median=0.0006
+s3_test  S       n=114 AUROC_site median=0.517 (Wilcoxon>0.5 p=2.01e-03) atom_AUROC median=0.489 | rho(IG,maxpool) res=0.752 top20 overlap=0.300 | completeness |err| median=0.0005
+s3_test  y_main  n=114 AUROC_site median=0.518 (Wilcoxon>0.5 p=1.01e-01) atom_AUROC median=0.529 | rho(IG,maxpool) res=0.752 top20 overlap=0.300 | completeness |err| median=0.0061
+s3_test  y_phy   n=114 AUROC_site median=0.533 (Wilcoxon>0.5 p=9.60e-05) atom_AUROC median=0.504 | rho(IG,maxpool) res=0.752 top20 overlap=0.300 | completeness |err| median=0.0004
+
+=== Branch agreement (median over cases) ===
+s1_test: rho(|IG main|,|IG phy|) res=0.790 atom=0.575 | rho(IG H, IG S) signed res=-0.252 atom=-0.517
+s3_test: rho(|IG main|,|IG phy|) res=0.885 atom=0.511 | rho(IG H, IG S) signed res=-0.395 atom=-0.652

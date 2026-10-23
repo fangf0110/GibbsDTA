@@ -1,0 +1,5 @@
+Test MSE: 0.1309
+Test RMSE: 0.3618
+Test CI: 0.8972
+Test RM2: 0.8136
+Test AUPR: 0.8502

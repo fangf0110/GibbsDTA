@@ -1,0 +1,32 @@
+{
+  "davis": {
+    "offset": 0,
+    "extra_token": "end",
+    "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+    "nearest_centroid_acc": {
+      "offset_0_extra_at_end": 0.9994732683697656,
+      "offset_1_extra_at_start": 0.649723465894127
+    },
+    "n_ligands_checked": 68,
+    "rows_minus_atoms_hist": {
+      "1": 68
+    },
+    "decided": true,
+    "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+  },
+  "kiba": {
+    "offset": 0,
+    "extra_token": "end",
+    "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+    "nearest_centroid_acc": {
+      "offset_0_extra_at_end": 0.9997892962494732,
+      "offset_1_extra_at_start": 0.6818373367045933
+    },
+    "n_ligands_checked": 300,
+    "rows_minus_atoms_hist": {
+      "1": 300
+    },
+    "decided": true,
+    "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+  }
+}

@@ -1,0 +1,81 @@
+root=/root/PhyNet-DTA python=/miniconda3/bin/python steps=unimol,e0,labels,e1,e2,e3,e4,e5
+
+========== [unimol] 2026-10-14 23:12:02 ==========
+[davis] {
+  "offset": 0,
+  "extra_token": "end",
+  "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+  "nearest_centroid_acc": {
+    "offset_0_extra_at_end": 0.9994732683697656,
+    "offset_1_extra_at_start": 0.649723465894127
+  },
+  "n_ligands_checked": 68,
+  "rows_minus_atoms_hist": {
+    "1": 68
+  },
+  "decided": true,
+  "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+}
+[kiba] {
+  "offset": 0,
+  "extra_token": "end",
+  "atom_order": "rdkit_AddHs (heavy atoms first, then H)",
+  "nearest_centroid_acc": {
+    "offset_0_extra_at_end": 0.9997892962494732,
+    "offset_1_extra_at_start": 0.6818373367045933
+  },
+  "n_ligands_checked": 300,
+  "rows_minus_atoms_hist": {
+    "1": 300
+  },
+  "decided": true,
+  "unimol_tools_check": "skipped (ModuleNotFoundError: No module named 'unimol_tools')"
+}
+saved /root/PhyNet-DTA/interpret/outputs/e0/unimol_token_map.json
+[unimol] done in 7s
+
+========== [e0] 2026-10-14 23:12:09 ==========
+E0 re-inference | device=cuda | root=/root/PhyNet-DTA
+[OK] davis s1 f0: n=4964 MSE=0.1455 (saved 0.1455) CI=0.9154 (saved 0.9154) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1719 CI=0.9027 | 13.3s
+[OK] davis s1 f1: n=4964 MSE=0.1586 (saved 0.1586) CI=0.9124 (saved 0.9124) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1828 CI=0.8950 | 5.8s
+[OK] davis s1 f2: n=4964 MSE=0.1419 (saved 0.1419) CI=0.9129 (saved 0.9129) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1759 CI=0.8887 | 5.9s
+[OK] davis s1 f3: n=4964 MSE=0.1482 (saved 0.1482) CI=0.9145 (saved 0.9145) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1676 CI=0.8957 | 6.4s
+[OK] davis s1 f4: n=4964 MSE=0.1530 (saved 0.1530) CI=0.9218 (saved 0.9218) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1710 CI=0.9027 | 8.7s
+[OK] davis s2 f0: n=5110 MSE=0.3468 (saved 0.3468) CI=0.7242 (saved 0.7242) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5044 CI=0.7004 | 6.6s
+[OK] davis s2 f1: n=5110 MSE=0.5996 (saved 0.5996) CI=0.7166 (saved 0.7166) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=1.3284 CI=0.6159 | 6.3s
+[OK] davis s2 f2: n=5110 MSE=0.5407 (saved 0.5407) CI=0.7319 (saved 0.7319) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5305 CI=0.7487 | 6.2s
+[OK] davis s2 f3: n=4745 MSE=0.5666 (saved 0.5666) CI=0.7077 (saved 0.7077) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5516 CI=0.6818 | 5.9s
+[OK] davis s2 f4: n=4745 MSE=0.6472 (saved 0.6472) CI=0.7541 (saved 0.7541) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.7100 CI=0.7234 | 5.8s
+[OK] davis s3 f0: n=4896 MSE=0.2852 (saved 0.2852) CI=0.8700 (saved 0.8700) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.3152 CI=0.8434 | 5.8s
+[OK] davis s3 f1: n=4964 MSE=0.2815 (saved 0.2815) CI=0.8639 (saved 0.8639) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.3796 CI=0.8323 | 6.0s
+[OK] davis s3 f2: n=4964 MSE=0.2042 (saved 0.2042) CI=0.9004 (saved 0.9004) max|y_main-y_saved|=1.91e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.2609 CI=0.8643 | 7.0s
+[OK] davis s3 f3: n=4964 MSE=0.2914 (saved 0.2914) CI=0.8583 (saved 0.8583) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4126 CI=0.7939 | 6.2s
+[OK] davis s3 f4: n=5032 MSE=0.2218 (saved 0.2218) CI=0.8743 (saved 0.8743) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.3216 CI=0.8305 | 7.7s
+[OK] davis s4 f0: n=1008 MSE=0.4076 (saved 0.4076) CI=0.6832 (saved 0.6832) max|y_main-y_saved|=9.54e-07 fwd_equiv=True(0.0e+00) | y_phy MSE=1.3181 CI=0.6406 | 1.7s
+[OK] davis s4 f1: n=1022 MSE=0.6954 (saved 0.6954) CI=0.6113 (saved 0.6113) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.7087 CI=0.6214 | 1.7s
+[OK] davis s4 f2: n=1022 MSE=0.5266 (saved 0.5266) CI=0.7183 (saved 0.7183) max|y_main-y_saved|=9.54e-07 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5219 CI=0.7192 | 1.7s
+[OK] davis s4 f3: n=949 MSE=0.6204 (saved 0.6204) CI=0.6573 (saved 0.6573) max|y_main-y_saved|=9.54e-07 fwd_equiv=True(0.0e+00) | y_phy MSE=0.9773 CI=0.6167 | 1.6s
+[OK] davis s4 f4: n=962 MSE=0.6631 (saved 0.6631) CI=0.7549 (saved 0.7549) max|y_main-y_saved|=1.43e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.6436 CI=0.7633 | 1.8s
+[OK] kiba s1 f0: n=23651 MSE=0.1332 (saved 0.1332) CI=0.8973 (saved 0.8973) max|y_main-y_saved|=4.77e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1955 CI=0.8460 | 45.6s
+[FAIL] kiba s1 f1: n=23651 MSE=0.1339 (saved 0.1372) CI=0.8989 (saved 0.8963) max|y_main-y_saved|=7.31e-01 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1864 CI=0.8498 | 33.3s
+[OK] kiba s1 f2: n=23651 MSE=0.1309 (saved 0.1309) CI=0.8971 (saved 0.8972) max|y_main-y_saved|=4.77e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1601 CI=0.8566 | 39.4s
+[OK] kiba s1 f3: n=23651 MSE=0.1373 (saved 0.1373) CI=0.8969 (saved 0.8969) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1650 CI=0.8575 | 40.4s
+[OK] kiba s1 f4: n=23650 MSE=0.1339 (saved 0.1339) CI=0.8973 (saved 0.8973) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.1643 CI=0.8578 | 28.7s
+[OK] kiba s2 f0: n=24153 MSE=0.3995 (saved 0.3995) CI=0.7779 (saved 0.7779) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4781 CI=0.7140 | 36.4s
+[OK] kiba s2 f1: n=24232 MSE=0.3503 (saved 0.3503) CI=0.7826 (saved 0.7827) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4446 CI=0.7299 | 38.5s
+[OK] kiba s2 f2: n=23571 MSE=0.3440 (saved 0.3440) CI=0.7795 (saved 0.7795) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4427 CI=0.7188 | 32.1s
+[OK] kiba s2 f3: n=23439 MSE=0.3697 (saved 0.3697) CI=0.7772 (saved 0.7773) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4739 CI=0.7145 | 25.0s
+[OK] kiba s2 f4: n=22859 MSE=0.4332 (saved 0.4332) CI=0.7669 (saved 0.7669) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5023 CI=0.7186 | 25.9s
+[OK] kiba s3 f0: n=26919 MSE=0.2899 (saved 0.2899) CI=0.7651 (saved 0.7651) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5151 CI=0.6564 | 29.3s
+[OK] kiba s3 f1: n=25172 MSE=0.2899 (saved 0.2899) CI=0.7987 (saved 0.7988) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4730 CI=0.7022 | 39.7s
+[OK] kiba s3 f2: n=22732 MSE=0.2863 (saved 0.2863) CI=0.7740 (saved 0.7740) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5121 CI=0.7726 | 43.3s
+[OK] kiba s3 f3: n=22399 MSE=0.2536 (saved 0.2536) CI=0.8229 (saved 0.8229) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4091 CI=0.7470 | 35.0s
+[OK] kiba s3 f4: n=21032 MSE=0.3621 (saved 0.3621) CI=0.7752 (saved 0.7753) max|y_main-y_saved|=3.81e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.4465 CI=0.7513 | 35.2s
+[OK] kiba s4 f0: n=5455 MSE=0.4994 (saved 0.4994) CI=0.6725 (saved 0.6726) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.5876 CI=0.6432 | 9.1s
+[OK] kiba s4 f1: n=5141 MSE=0.4880 (saved 0.4880) CI=0.7011 (saved 0.7011) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.8689 CI=0.6264 | 8.5s
+[OK] kiba s4 f2: n=4528 MSE=0.4790 (saved 0.4790) CI=0.6943 (saved 0.6943) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.6688 CI=0.6748 | 6.0s
+[OK] kiba s4 f3: n=4436 MSE=0.4540 (saved 0.4540) CI=0.7154 (saved 0.7155) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.8366 CI=0.6624 | 7.6s
+[OK] kiba s4 f4: n=4103 MSE=0.6912 (saved 0.6912) CI=0.6784 (saved 0.6784) max|y_main-y_saved|=2.86e-06 fwd_equiv=True(0.0e+00) | y_phy MSE=0.6786 CI=0.6613 | 7.9s
+
+RESULT: 1 FAILURE(S): ['kiba s1 f1 eq_ok=True mse_ok=False']
+[e0] FAILED - see /root/PhyNet-DTA/interpret/outputs/logs/run_20261014_231202.log
